@@ -54,6 +54,8 @@
             bottom: 100px; /* Đặt nút "Từ chối" xuống dưới */
             width: 160px; /* Đảm bảo kích thước cố định */
             height: 50px; /* Đảm bảo kích thước cố định */
+            transition: all 0.5s ease; /* Hiệu ứng di chuyển mượt mà */
+            z-index: 9999; /* Đảm bảo nút luôn ở trên */
         }
 
         .heart {
@@ -63,6 +65,7 @@
             background-color: #ff9a9e;
             transform: rotate(-45deg);
             animation: float 6s infinite;
+            z-index: 1; /* Đảm bảo trái tim nằm dưới nút */
         }
 
         .heart:before,
